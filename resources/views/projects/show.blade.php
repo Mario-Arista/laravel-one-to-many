@@ -15,7 +15,7 @@
                 
 
                 <div>
-                    <span class="bg-danger p-1">{{ $project->type_id === null ? 'SENZA TIPOLOGIA' : $type->name}}</span>
+                    <span class="bg-danger p-1">{{ $project->type?->name }}</span>
                     <div class="p-1"><strong>Nome: </strong>{{$project->name}}</div>
                     <div class="p-1"><strong>Descrizione: </strong>{{$project->description}}</div>
                 </div>

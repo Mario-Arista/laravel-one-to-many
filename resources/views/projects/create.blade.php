@@ -29,11 +29,13 @@
                   <select name="type_id" id="type_id">
                     <option value=""></option>
                     @foreach ($types as $type)
-                      <option value="{{$type->id}}">{{ $type->name }}</option>
+                      <option value="{{$type->id}}" {{ $type->id == old('type_id') ? 'selected' : '' }}>
+                        {{ $type->name }}
+                      </option>
                     @endforeach
                   </select>
                 </div>
-                
+
                 <div class="mb-3">
                     <label for="develop_with" class="form-label">Sviluppato con:</label>
                     <input type="text" class="form-control @error('develop_with') is-invalid @enderror" id="develop_with" name="develop_with" value="{{ old('develop_with') }}">
