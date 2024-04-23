@@ -35,6 +35,11 @@
                 
             </button>
 
+            <button class="btn btn-danger mt-5" >
+                <a class="text-decoration-none text-white text-capitalize" href="">{{__('Modifica Tipologie Progetti (vuoto)')}}</a>
+                
+            </button>
+
         </div>
     </div>
 </div>

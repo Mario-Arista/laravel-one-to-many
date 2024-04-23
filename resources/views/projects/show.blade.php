@@ -12,8 +12,10 @@
             <div class="d-flex align-items-center gap-2 p-3 text-white">
             
                 <img src="{{asset('storage/' . $project->image)}}" alt="{{$project->name}}" style="max-height: 300px;">
+                
 
                 <div>
+                    <span class="bg-danger p-1">{{ $project->type_id === null ? 'SENZA TIPOLOGIA' : $type->name}}</span>
                     <div class="p-1"><strong>Nome: </strong>{{$project->name}}</div>
                     <div class="p-1"><strong>Descrizione: </strong>{{$project->description}}</div>
                 </div>

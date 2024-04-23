@@ -27,6 +27,7 @@ class StoreProjectRequest extends FormRequest
             'develop_with' => 'required|max:150',
             'link_github' => 'required',
             'image' => 'required|file|max:1024|mimes:jpg,bmp,png',
+            'type_id' => 'nullable|exists:types,id'
         ];
     }
 
