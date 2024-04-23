@@ -12,6 +12,8 @@ class Type extends Model
 
     use SoftDeletes;
 
+    protected $fillable = [ 'name'];
+
     public function projects() {
         return $this->hasMany(Project::class);
     }

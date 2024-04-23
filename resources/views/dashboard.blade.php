@@ -36,7 +36,7 @@
             </button>
 
             <button class="btn btn-danger mt-5" >
-                <a class="text-decoration-none text-white text-capitalize" href="">{{__('Modifica Tipologie Progetti (vuoto)')}}</a>
+                <a class="text-decoration-none text-white text-capitalize" href="{{route('admin.types.index')}}">{{__('Modifica Tipologie Progetti')}}</a>
                 
             </button>
 
