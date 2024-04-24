@@ -24,7 +24,6 @@ class StoreProjectRequest extends FormRequest
         return [
             'name' => 'required|max:100',
             'description' => 'required',
-            'develop_with' => 'required|max:150',
             'link_github' => 'required',
             'image' => 'required|file|max:1024|mimes:jpg,bmp,png',
             'type_id' => 'nullable|exists:types,id'
@@ -38,9 +37,6 @@ class StoreProjectRequest extends FormRequest
             'name.max' => "Il nome del progetto deve avere massimo :max caratteri",
 
             'description.required' => 'La descrizione del progetto deve essere inserito',
-
-            'develop_with.required' => 'Il campo deve essere inserito',
-            'develop_with.max' => "Questo campo deve avere massimo :max caratteri",
 
             'link_github.required' => 'Il link del progetto deve essere inserito',
 

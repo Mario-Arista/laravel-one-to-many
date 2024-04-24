@@ -28,7 +28,7 @@
 
               <div class="mb-3">
                   <label for="name" class="form-label">Nome nuovo da assegnare:</label>
-                  <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name') }}">
+                  <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name') ?? $type->name  }}">
                   @error('name')
                   <div class="invalid-feedback">
                     {{$message}}

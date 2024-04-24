@@ -37,15 +37,6 @@
                   </div>
 
                   <div class="mb-3">
-                      <label for="develop_with" class="form-label">Sviluppato con:</label>
-                      <input type="text" class="form-control @error('develop_with') is-invalid @enderror" id="develop_with" name="develop_with" value="{{ old('develop_with') }}">
-                      @error('develop_with')
-                      <div class="invalid-feedback">
-                        {{$message}}
-                      </div>
-                      @enderror
-                  </div>
-                  <div class="mb-3">
                       <label for="link_github" class="form-label">Link progetto</label>
                       <input type="text" class="form-control @error('link_github') is-invalid @enderror" id="link_github" name="link_github" value="{{ old('link_github') }}">
                       @error('link_github')

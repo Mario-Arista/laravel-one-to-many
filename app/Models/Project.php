@@ -12,7 +12,7 @@ class Project extends Model
 
     use SoftDeletes;
 
-    protected $fillable = [ 'name', 'description', 'develop_with', 'link_github', 'type_id'];
+    protected $fillable = [ 'name', 'description', 'link_github', 'type_id'];
 
     public function type() {
         return $this->belongsTo(Type::class);

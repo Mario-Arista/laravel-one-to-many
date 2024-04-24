@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('projects', function (Blueprint $table) {
-           $table->foreignId('type_id')->nullable()->constrained()->nullOnDelete();
+            $table->dropColumn('develop_with');
         });
     }
 
@@ -22,11 +22,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('projects', function (Blueprint $table) {
-            // rimuovo vincolo
-            $table->dropForeign('projects_type_id_foreign');
-
-            // rimuovo colonna
-            $table->dropColumn('type_id');
+            $table->string('develop_with', 150);
         });
     }
 };
