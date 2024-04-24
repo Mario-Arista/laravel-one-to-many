@@ -16,7 +16,7 @@
     <div class="row mt-5">
 
         @foreach ($types as $type)
-        <div class="col-lg-3 col-md-3 mb-3">
+        <div class="col-lg-3 col-md-3 mb-3 border border-1 border-danger p-5">
 
             <div class="types d-flex flex-column align-items-center justify-content-between gap-2">
                 <div>
